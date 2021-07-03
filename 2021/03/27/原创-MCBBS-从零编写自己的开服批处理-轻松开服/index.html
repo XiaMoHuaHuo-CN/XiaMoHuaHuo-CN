@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://z3.ax1x.com/2021/04/02/cmcY1H.png">
 <meta property="article:published_time" content="2021-03-27T09:35:36.000Z">
-<meta property="article:modified_time" content="2021-05-05T07:47:52.371Z">
+<meta property="article:modified_time" content="2021-07-03T11:54:33.132Z">
 <meta property="article:author" content="XiaMoHuaHuo_CN">
 <meta property="article:tag" content="MineCraft">
 <meta name="twitter:card" content="summary">
@@ -134,7 +134,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.21K
+                        ~2.65K
                     
                     字
                 </li>
@@ -149,7 +149,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1620200872371"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1625313273132"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
@@ -181,53 +181,34 @@
 <h1>第二章 初步启航</h1>
 <p>本章开始正式教学。如果还有不懂，建议先消化第一章的内容。<br />
 开服最简单的方式就是添加Java参数。如下所示：<br />
-<b>java -Xms&lt;最小内存&gt; -Xmx&lt;最大内存&gt; -jar &lt;开服核心名&gt;</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xms&lt;最小内存&gt; -Xmx&lt;最大内存&gt; -jar &lt;开服核心名&gt;</span><br></pre></td></tr></table></figure><br />
 但是这样似乎过于简陋。对于我们，一定想进行优化和个性化。<br />
 在“java -Xms&lt;最小内存&gt; -Xmx&lt;最大内存&gt; -jar &lt;开服核心名&gt;”中，如果使用高级Java参数，就会导致修改不方便，或者导致误删等问题。那么，我们用set命令来解决。<br />
 set命令可以设置变量，那么我们只要设置+调用变量，即可轻松解决问题。如下所示：<br />
-<b>set Xms=&lt;最小内存&gt;</b><br />
-<b>set Xmx=&lt;最大内存&gt;</b><br />
-<b>set jar=&lt;开服核心名，无需后缀&gt;</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set Xms&#x3D;&lt;最小内存&gt;&lt;br &#x2F;&gt;</span><br><span class="line">set Xmx&#x3D;&lt;最大内存&gt;&lt;br &#x2F;&gt;</span><br><span class="line">set jar&#x3D;&lt;开服核心名，无需后缀&gt;</span><br></pre></td></tr></table></figure><br />
 有了变量，那么我们就要调用变量。我们把变量调用至Java参数中。如下所示：<br />
-<b>java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar</span><br></pre></td></tr></table></figure><br />
 现在，你已经学会了最基础的内容，本章到此完结。</p>
 
 <h1>第三章 小有学识</h1>
 <p><img src="https://www.mcmod.cn/pages/tools/achievements/images/achievements/201504_ndqqLSUf.png" /><br />
 服务器重启总是要手动？试试goto指令吧。如下所示:<br />
-<b>:1</b><br />
-<b>goto 1</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:1&lt;br &#x2F;&gt;</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 这样就可以不断跳回1处。goto命令用:&lt;标记名&gt;来做标记，牢记此点可完善服务器。<br />
 我们把参数加到中间，如下所示:<br />
-<b>:1</b><br />
-<b>set Xms=&lt;最小内存&gt;</b><br />
-<b>set Xmx=&lt;最大内存&gt;</b><br />
-<b>set jar=&lt;开服核心名，无需后缀&gt;</b><br />
-<b>java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar</b><br />
-<b>goto 1</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">:1&lt;br &#x2F;&gt;</span><br><span class="line">set Xms&#x3D;&lt;最小内存&gt;&lt;br &#x2F;&gt;</span><br><span class="line">set Xmx&#x3D;&lt;最大内存&gt;&lt;br &#x2F;&gt;</span><br><span class="line">set jar&#x3D;&lt;开服核心名，无需后缀&gt;&lt;br &#x2F;&gt;</span><br><span class="line">java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar&lt;br &#x2F;&gt;</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 重启是解决了，可是关服好像也会重启？试试timeout或者choice吧。如下所示:<br />
 <span>timeout:</span><br />
-<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
-<b>timeout /t %goto_time%</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;&lt;br &#x2F;&gt;</span><br><span class="line">timeout &#x2F;t %goto_time%</span><br></pre></td></tr></table></figure><br />
 <span>choice:</span><br />
-<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
-<b>choice /c a /t %goto_time% /d a /n&gt;nul</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;&lt;br &#x2F;&gt;</span><br><span class="line">choice &#x2F;c a &#x2F;t %goto_time% &#x2F;d a &#x2F;n&gt;nul</span><br></pre></td></tr></table></figure><br />
 这样不就解决了吗。我们把它加到参数中，如下所示:<br />
 <span>timeout:</span><br />
-<b>:1</b><br />
-<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
-<b>(略)</b><br />
-<b>timeout /t %goto_time%</b><br />
-<b>goto 1</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1&lt;br &#x2F;&gt;</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;&lt;br &#x2F;&gt;</span><br><span class="line">(略)&lt;br &#x2F;&gt;</span><br><span class="line">timeout &#x2F;t %goto_time%&lt;br &#x2F;&gt;</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 <span>choice:</span><br />
-<b>:1</b><br />
-<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
-<b>(略)</b><br />
-<b>choice /c a /t %goto_time% /d a /n&gt;nul</b><br />
-<b>goto 1</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1&lt;br &#x2F;&gt;</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;&lt;br &#x2F;&gt;</span><br><span class="line">(略)&lt;br &#x2F;&gt;</span><br><span class="line">choice &#x2F;c a &#x2F;t %goto_time% &#x2F;d a &#x2F;n&gt;nul&lt;br &#x2F;&gt;</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 这样就有了一个高级的批处理了。但是回执似乎很烦？把@echo加进去试试吧。如下所示：<br />
-<b>@echo off</b><br />
-<b>(略)</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@echo off&lt;br &#x2F;&gt;</span><br><span class="line">(略)</span><br></pre></td></tr></table></figure><br />
 现在，烦人的回执就被关掉了。<br />
 你学会了这些内容，那么本章到此完结。</p>
 
@@ -236,13 +217,13 @@ set命令可以设置变量，那么我们只要设置+调用变量，即可轻�
 这里是第四章，扩展内容。你可以在这里学到一些扩展内容。<br />
 在这里，你将学到<font color="blue"><b>color、echo、title</b></font>三种代码的用法。<br />
 背景和文字颜色好像太单调？还是黑底白字？我们来用<font color="blue"><b>color</b></font>设置颜色吧。如下所示：<br />
-<b>color &lt;文字颜色&gt;&lt;背景颜色&gt;</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color &lt;文字颜色&gt;&lt;背景颜色&gt;</span><br></pre></td></tr></table></figure><br />
 颜色表:<br />
 <img src="https://z3.ax1x.com/2021/04/02/cmy7IU.jpg" /><br />
 听说你想增加回执？<font color="blue"><b>echo</b></font>满足你。如下所示：<br />
-<b>echo &lt;内容&gt;</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &lt;内容&gt;</span><br></pre></td></tr></table></figure><br />
 想自定义窗口标题？这个不难，<font color="blue"><b>title</b></font>可以做到。如下所示：<br />
-<b>title &lt;标题&gt;</b><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title &lt;标题&gt;</span><br></pre></td></tr></table></figure><br />
 现在在你的批处理中加入他们做一个更高级的批处理来开服吧。<br />
 本章到此完结。</p>
 <h1>扩展教程</h1>
@@ -253,7 +234,7 @@ Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以
 <a target="_blank" rel="noopener" href="https://share.weiyun.com/V2R1rFBL">https://share.weiyun.com/V2R1rFBL</a><br />
 <br/>
 开服高级参数：<br/>
-<b>-Xms&lt;最大内存&gt; -Xmx&lt;最小内存&gt; -XX:+UseG1GC -server -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat -XX:+AggressiveOpts -XX:MaxGCPauseMillis=10 -XX:+UseStringDeduplication -jar &lt;核心名&gt;.jar</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xms&lt;最大内存&gt; -Xmx&lt;最小内存&gt; -XX:+UseG1GC -server -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat -XX:+AggressiveOpts -XX:MaxGCPauseMillis&#x3D;10 -XX:+UseStringDeduplication -jar &lt;核心名&gt;.jar</span><br></pre></td></tr></table></figure></p>
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -346,7 +327,7 @@ Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以
                     <a class="tag-none-link" href="/tags/MineCraft/" rel="tag">MineCraft</a>
                 </div>
                 <div class="pull-date">
-                <span>最后编辑：2021-05-05</span>
+                <span>最后编辑：2021-07-03</span>
                 </div>
             </div>
         </footer>
