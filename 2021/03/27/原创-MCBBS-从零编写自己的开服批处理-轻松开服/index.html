@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://z3.ax1x.com/2021/04/02/cmcY1H.png">
 <meta property="article:published_time" content="2021-03-27T09:35:36.000Z">
-<meta property="article:modified_time" content="2021-07-03T12:06:40.365Z">
+<meta property="article:modified_time" content="2021-07-03T12:09:33.484Z">
 <meta property="article:author" content="XiaMoHuaHuo_CN">
 <meta property="article:tag" content="MineCraft">
 <meta name="twitter:card" content="summary">
@@ -134,7 +134,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.37K
+                        ~2.33K
                     
                     字
                 </li>
@@ -149,7 +149,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1625314000365"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1625314173484"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
@@ -204,9 +204,9 @@ set命令可以设置变量，那么我们只要设置+调用变量，即可轻�
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;</span><br><span class="line">choice &#x2F;c a &#x2F;t %goto_time% &#x2F;d a &#x2F;n&gt;nul</span><br></pre></td></tr></table></figure><br />
 这样不就解决了吗。我们把它加到参数中，如下所示:<br />
 <span>timeout:</span><br />
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;</span><br><span class="line">(略)&lt;br &#x2F;&gt;</span><br><span class="line">timeout &#x2F;t %goto_time%</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;</span><br><span class="line">(略)</span><br><span class="line">timeout &#x2F;t %goto_time%</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 <span>choice:</span><br />
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;</span><br><span class="line">(略)&lt;br &#x2F;&gt;</span><br><span class="line">choice &#x2F;c a &#x2F;t %goto_time% &#x2F;d a &#x2F;n&gt;nul</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:1</span><br><span class="line">set goto_time&#x3D;&lt;自重启等待秒数&gt;</span><br><span class="line">(略)</span><br><span class="line">choice &#x2F;c a &#x2F;t %goto_time% &#x2F;d a &#x2F;n&gt;nul</span><br><span class="line">goto 1</span><br></pre></td></tr></table></figure><br />
 这样就有了一个高级的批处理了。但是回执似乎很烦？把@echo加进去试试吧。如下所示：<br />
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">(略)</span><br></pre></td></tr></table></figure><br />
 现在，烦人的回执就被关掉了。<br />
