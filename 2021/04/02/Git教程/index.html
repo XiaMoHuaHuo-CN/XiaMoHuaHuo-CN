@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://z3.ax1x.com/2021/04/02/cmcY1H.png">
 <meta property="article:published_time" content="2021-04-02T08:26:15.000Z">
-<meta property="article:modified_time" content="2021-07-03T12:02:06.263Z">
+<meta property="article:modified_time" content="2021-07-03T12:03:28.278Z">
 <meta property="article:author" content="XiaMoHuaHuo_CN">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -134,7 +134,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        1423
+                        1338
                     
                     字
                 </li>
@@ -149,7 +149,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最后编辑于 <time datetime="1625313726263"></time> 前，其中的内容可能需要更新。
+                本文最后编辑于 <time datetime="1625313808278"></time> 前，其中的内容可能需要更新。
             </div>
             
             <hr />
@@ -182,12 +182,12 @@ Git Bash Here</b></p>
 回车就会看到：Hi &lt;Github名&gt;! You’ve successfully authenticated, but GitHub does not provide shell access。这就表示已成功连上github。<br />
 <img src="https://z3.ax1x.com/2021/04/02/cm6ZLt.png" /><br />
 接下来我们要做的就是把本地仓库传到github上去，在此之前还需要设置username和email，因为github每次commit都会记录他们<br />
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;&lt;Github名称&gt;&quot;&lt;br &#x2F;&gt;</span><br><span class="line">$ git config --global user.email &quot;&lt;你注册github的邮箱&gt;&quot;</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;&lt;Github名称&gt;&quot;</span><br><span class="line">$ git config --global user.email &quot;&lt;你注册github的邮箱&gt;&quot;</span><br></pre></td></tr></table></figure><br />
 <img src="https://z3.ax1x.com/2021/04/02/cm6EQA.png" /><br />
 进入要上传的仓库，右键git bash，添加远程地址:<br />
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &lt;Github仓库ssh地址&gt;&lt;br &#x2F;&gt;</span><br><span class="line">$ git push origin &lt;Github仓库分支，默认master&gt;</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin &lt;Github仓库ssh地址&gt;</span><br><span class="line">$ git push origin &lt;Github仓库分支，默认master&gt;</span><br></pre></td></tr></table></figure>
 然后在命令行输入一下命令:<br />
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;要上传的文件名称，全部请填*&gt;&lt;br &#x2F;&gt;</span><br><span class="line">$ git ci -m &quot;&lt;上传描述&gt;&quot;&lt;br &#x2F;&gt;</span><br><span class="line">git push命令会将本地仓库推送到远程服务器。&lt;br &#x2F;&gt;</span><br><span class="line">git pull命令则相反。</span><br></pre></td></tr></table></figure><br />
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;要上传的文件名称，全部请填*&gt;</span><br><span class="line">$ git ci -m &quot;&lt;上传描述&gt;&quot;</span><br><span class="line">git push命令会将本地仓库推送到远程服务器。</span><br><span class="line">git pull命令则相反。</span><br></pre></td></tr></table></figure><br />
 注：首次提交，先git pull下，修改完代码后，使用git status可以查看文件的差别，使用git add 添加要commit的文件。</p>
         </div>
         
