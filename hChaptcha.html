@@ -7,29 +7,41 @@
         <div class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d"></div>
         <input type="button" onclick="hCaptcha" value="检测" />
         <span id="ok"></span>
-        <script>
-            function hCaptcha(){
-        //PSEUDO CODE
+            <script>
+                      // success callback
+                      var onSuccess = function(response) {
+                        var errorDivs = document.getElementsByClassName("hcaptcha-error");
+                        if (errorDivs.length) {
+                          errorDivs[0].className = "";
+                        }
+                        var errorMsgs = document.getElementsByClassName("hcaptcha-error-message");
+                        if (errorMsgs.length) {
+                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                        }
 
-        SECRET_KEY = "0x17c099D987C954BcD6aC598f5dFe925E859E07CE"    // replace with your secret key
-        VERIFY_URL = "https://hcaptcha.com/siteverify"
-        
-        //Retrieve token from post data with key 'h-captcha-response'.
-        token = request.POST_DATA['h-captcha-response']
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML = "挑战成功！"
+                      };
 
-        //Build payload with secret key and token.
-        data = { 'secret': SECRET_KEY, 'response': token }
-
-        //Make POST request with data payload to hCaptcha API endpoint.
-        response = http.post(url=VERIFY_URL, data=data)
-
-        //Parse JSON from response. Check for success or error codes.
-        response_json = JSON.parse(response.content)
-        success = response_json['success']
-        if(success) {
-        document.getElementById("ok").innerHTML="验证成功";
-        }
-            }
-        </script>
+                      var onExpire = function(response) {
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML = "令牌已过期。"
+                      };
+                </script>
     </body>
+    <script type="text/javascript">
+    // beacon example
+    function addEventHandler(object,szEvent,cbCallback){
+        if(!!object.addEventListener){ // for modern browsers or IE9+
+            return object.addEventListener(szEvent,cbCallback);
+        }
+        if(!!object.attachEvent){ // for IE <=8
+            return object.attachEvent(szEvent,cbCallback);
+        }
+    };
+    // Ex: triggers pageview beacon
+    addEventHandler(window,'load',function(){b();});
+    // Ex: triggers event beacon without pageview
+    addEventHandler(window,'load',function(){b({"vt": "e", "ec": "test_cat", "ea": "test_action"});});
+  </script>
 </html>
