@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d"></div>
-        <input type="button" onclick="hCaptcha" value="检测" />
+        <input type="button" id="hcaptcha-demo-submit" value="检测" />
         <span id="ok"></span>
             <script>
                       // success callback
@@ -20,12 +20,12 @@
                         }
 
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "挑战成功！"
+                        logEl.innerHTML = "验证成功"
                       };
 
                       var onExpire = function(response) {
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "令牌已过期。"
+                        logEl.innerHTML = "token已失效，请重新验证"
                       };
                 </script>
     </body>
