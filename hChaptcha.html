@@ -17,7 +17,7 @@
 <div class="sample-form">
 <form id="hcaptcha-demo-form" method="POST">
 <fieldset>
-<legend>hCAPTCHA的样本表格</legend>
+<legend>请完成人机验证</legend>
 <ul>
 <li role="presentation">
 <div class="">
@@ -36,19 +36,16 @@
                         }
 
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "挑战成功！"
+                        logEl.innerHTML = "验证成功"
                       };
 
                       var onExpire = function(response) {
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "令牌已过期。"
+                        logEl.innerHTML = "token已过期"
                       };
                 </script>
 
 </div>
-</li>
-<li>
-<input id="hcaptcha-demo-submit" type="submit" value="Submit">
 </li>
 </ul>
 </fieldset>
