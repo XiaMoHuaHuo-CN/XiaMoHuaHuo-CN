@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    </head>
+    <body>
+        <div class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d"></div>
+        <input type="button" onclick="hCaptcha" value="检测" />
+        <script>
+            function hCaptcha(){
+        //PSEUDO CODE
+
+        SECRET_KEY = "0x17c099D987C954BcD6aC598f5dFe925E859E07CE"    // replace with your secret key
+        VERIFY_URL = "https://hcaptcha.com/siteverify"
+        
+        //Retrieve token from post data with key 'h-captcha-response'.
+        token = request.POST_DATA['h-captcha-response']
+
+        //Build payload with secret key and token.
+        data = { 'secret': SECRET_KEY, 'response': token }
+
+        //Make POST request with data payload to hCaptcha API endpoint.
+        response = http.post(url=VERIFY_URL, data=data)
+
+        //Parse JSON from response. Check for success or error codes.
+        response_json = JSON.parse(response.content)
+        success = response_json['success']
+        
+            }
+        </script>
+    </body>
+</html>
