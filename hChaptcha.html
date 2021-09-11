@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-    </head>
-    <body>
-        <div class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d"></div>
-        <input type="button" id="hcaptcha-demo-submit" value="检测" />
-        <span id="ok"></span>
-            <script>
+<head>
+<title>hCAPTCHA演示</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<script src="https://js.hcaptcha.com/1/api.js?reportapi=https%3A%2F%2Faccounts.hcaptcha.com&custom=False" type="text/javascript" async defer></script>
+<script src="/static/js/b.js" type="text/javascript" async defer></script>
+<style type="text/css">
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-family:-apple-system,helvetica,arial,sans-serif;font-size:14px;vertical-align:baseline}fieldset{border:1px solid #ebebeb;padding:16px}form label{display:block;line-height:29px}form ul li{margin-bottom:10px}input{font-family:-apple-system,helvetica,arial,sans-serif;font-size:14px}ul{list-style:none}.sample-form{width:335px;padding:16px}.hcaptcha-error{border:1px solid #dd4b39;padding:5px}.hcaptcha-error-message{color:#dd4b39;font-size:24px;padding:10px 0}.hcaptcha-success{margin:20px; font-size: 24px;}.smsg{color:green;}.warning{padding: 10px 10px 0px 10px;}
+      code { font-family: 'Courier New', Courier, monospace; background-color: lightgrey;}
+    }
+    }
+    </style>
+</head>
+<body>
+<div class="sample-form">
+<form id="hcaptcha-demo-form" method="POST">
+<fieldset>
+<legend>hCAPTCHA的样本表格</legend>
+<ul>
+<li role="presentation">
+<div class="">
+
+<div id="hcaptcha-demo" class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d" data-callback="onSuccess" data-expired-callback="onExpire"></div>
+<script>
                       // success callback
                       var onSuccess = function(response) {
                         var errorDivs = document.getElementsByClassName("hcaptcha-error");
@@ -20,17 +36,27 @@
                         }
 
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "验证成功"
+                        logEl.innerHTML = "挑战成功！"
                       };
 
                       var onExpire = function(response) {
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "token已失效，请重新验证"
+                        logEl.innerHTML = "令牌已过期。"
                       };
                 </script>
+
+</div>
+</li>
+<li>
+<input id="hcaptcha-demo-submit" type="submit" value="Submit">
+</li>
+</ul>
+</fieldset>
+</form>
 <div class="hcaptcha-success smsg" aria-live="polite"></div>
-    </body>
-    <script type="text/javascript">
+</div>
+</body>
+<script type="text/javascript">
     // beacon example
     function addEventHandler(object,szEvent,cbCallback){
         if(!!object.addEventListener){ // for modern browsers or IE9+
