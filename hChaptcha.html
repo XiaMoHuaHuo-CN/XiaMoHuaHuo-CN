@@ -6,6 +6,7 @@
     <body>
         <div class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d"></div>
         <input type="button" onclick="hCaptcha" value="检测" />
+        <span id="ok"></span>
         <script>
             function hCaptcha(){
         //PSEUDO CODE
@@ -25,7 +26,9 @@
         //Parse JSON from response. Check for success or error codes.
         response_json = JSON.parse(response.content)
         success = response_json['success']
-        
+        if(success) {
+        document.getElementById(ok).innerHTML="验证成功"
+        }
             }
         </script>
     </body>
