@@ -14,7 +14,7 @@
 <h2>映画の云</h2>
 <a href="https://disk.onji.cn/">https://disk.onji.cn/</a>
 <h2>IPIP</h2>
-<a href="https://en.ipip.net/">https://en.ipip.net/</a>
+<a href="https://ipip.net/">https://ipip.net/</a>
 <h2>Audio Tool Set</h2>
 <a href="https://audiotoolset.com/cn/">https://audiotoolset.com/cn/</a>
 <h2>Steam Database</h2>
