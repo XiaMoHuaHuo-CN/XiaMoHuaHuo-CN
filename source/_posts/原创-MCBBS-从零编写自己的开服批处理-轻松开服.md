@@ -118,7 +118,7 @@ goto 1{% endcodeblock %}<br />
                         }
 
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = '<p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以轻松调节编码方式，而且其填充功能可以轻松填入代码，无需频繁输入。</p><p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />想用回执排列符号图案？记事本是个好东西。记事本的显示比例与bat窗口完全一致，是个排列图案的好东西。注意，排列完后记得把内容复制到编辑器里。</p>'
+                        logEl.innerHTML = '<p><b>扩展1：使用Notepad++编辑</b><br/>Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以轻松调节编码方式，而且其填充功能可以轻松填入代码，无需频繁输入。</p><p><b>扩展1：使用Notepad++编辑</b><br/>想用回执排列符号图案？记事本是个好东西。记事本的显示比例与bat窗口完全一致，是个排列图案的好东西。注意，排列完后记得把内容复制到编辑器里。</p>'
                       };
 
                       var onExpire = function(response) {
