@@ -97,10 +97,42 @@ goto 1{% endcodeblock %}<br />
 现在在你的批处理中加入他们做一个更高级的批处理来开服吧。<br />
 本章到此完结。</p>
 <h1>扩展教程</h1>
-<p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />
-Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以轻松调节编码方式，而且其填充功能可以轻松填入代码，无需频繁输入。</p>
-<p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />
-想用回执排列符号图案？记事本是个好东西。记事本的显示比例与bat窗口完全一致，是个排列图案的好东西。注意，排列完后记得把内容复制到编辑器里。</p>
+<div class="sample-form">
+<form id="hcaptcha-demo-form" method="POST">
+<fieldset>
+<legend>请完成人机验证</legend>
+<li role="presentation" id="Captha">由hCaptcha提供技术支持
+<div class="">
+
+<div id="hcaptcha-demo" class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d" data-callback="onSuccess" data-expired-callback="onExpire"></div>
+<script>
+                      // success callback
+                      var onSuccess = function(response) {
+                        var errorDivs = document.getElementsByClassName("hcaptcha-error");
+                        if (errorDivs.length) {
+                          errorDivs[0].className = "";
+                        }
+                        var errorMsgs = document.getElementsByClassName("hcaptcha-error-message");
+                        if (errorMsgs.length) {
+                          errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
+                        }
+
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML += "<p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以轻松调节编码方式，而且其填充功能可以轻松填入代码，无需频繁输入。</p><p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />想用回执排列符号图案？记事本是个好东西。记事本的显示比例与bat窗口完全一致，是个排列图案的好东西。注意，排列完后记得把内容复制到编辑器里。</p>"
+                      };
+
+                      var onExpire = function(response) {
+                        var logEl = document.querySelector(".hcaptcha-success");
+                        logEl.innerHTML = "<p>人机token已过期</p>"
+                      };
+                </script>
+
+</div>
+</li>
+</fieldset>
+</form>
+<div class="hcaptcha-success smsg" aria-live="polite"></div>
+</div>
 <h1>白嫖区！！！</h1>
 <p>白嫖bat↓↓↓纯手打<br />
 <a href="http://repo.huahuo-cn.tk/Start.bat">http://repo.huahuo-cn.tk/Start.bat</a><br />
