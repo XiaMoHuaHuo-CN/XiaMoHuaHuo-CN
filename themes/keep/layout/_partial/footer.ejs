@@ -29,4 +29,19 @@
             <div class="icp-info info-item"><a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn"><%= theme.footer.icp %></a></div>
         <% } %>
     </div>
+    <script type="text/javascript">
+    // beacon example
+    function addEventHandler(object,szEvent,cbCallback){
+        if(!!object.addEventListener){ // for modern browsers or IE9+
+            return object.addEventListener(szEvent,cbCallback);
+        }
+        if(!!object.attachEvent){ // for IE <=8
+            return object.attachEvent(szEvent,cbCallback);
+        }
+    };
+    // Ex: triggers pageview beacon
+    addEventHandler(window,'load',function(){b();});
+    // Ex: triggers event beacon without pageview
+    addEventHandler(window,'load',function(){b({"vt": "e", "ec": "test_cat", "ea": "test_action"});});
+  </script>
 </footer>
