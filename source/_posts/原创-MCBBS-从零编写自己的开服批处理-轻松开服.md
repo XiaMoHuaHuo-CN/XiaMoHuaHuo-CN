@@ -106,7 +106,6 @@ goto 1{% endcodeblock %}<br />
 
 <div id="hcaptcha-demo" class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d" data-callback="onSuccess" data-expired-callback="onExpire"></div>
 <script>
-                      // success callback
                       var onSuccess = function(response) {
                         var errorDivs = document.getElementsByClassName("hcaptcha-error");
                         if (errorDivs.length) {
