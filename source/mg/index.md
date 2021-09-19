@@ -2,18 +2,15 @@
     .Box-body {
       height: 300px;
     }
-
     .octicon-check {
       display: none;
     }
-
     .v-fork-me {
       position: fixed;
       right: 0;
       top: 0;
       z-index: 999;
     }
-
     @media (max-width: 979px) {
       .v-fork-me {
         display: none;
@@ -22,7 +19,6 @@
   </style>
   <div class="container-lg px-3 my-5">
     <h1>营销号文案生成器</h1>
-
     <div class="col-sm-12 col-md-6 px-1 my-2 float-left">
       <div class="Box box-shadow">
         <div class="Box-header">
@@ -40,7 +36,6 @@
                 <input class="form-control input-hide-webkit-autofill" placeholder="1+1" id="name" required />
               </div>
             </div>
-
             <div class="form-group">
               <div class="form-group-header">
                 <label for="event">事件：</label>
@@ -49,7 +44,6 @@
                 <input class="form-control input-hide-webkit-autofill" placeholder="等于3" id="event" required />
               </div>
             </div>
-
             <div class="form-group">
               <div class="form-group-header">
                 <label for="other">另一种说法：</label>
@@ -58,7 +52,6 @@
                 <input class="form-control input-hide-webkit-autofill" placeholder="把两个1加在一起等于3" id="other" required />
               </div>
             </div>
-
             <div class="form-actions">
               <button type="submit" class="btn btn-primary">生成</button>
             </div>
@@ -66,7 +59,6 @@
         </div>
       </div>
     </div>
-
     <div class="col-sm-12 col-md-6 px-1 my-2 float-left">
       <div class="Box box-shadow">
         <div class="Box-header d-flex flex-items-center">
