@@ -1,4 +1,7 @@
-  <style>
+---
+title: 营销号文案生成器
+---
+<style>
     .Box-body {
       height: 300px;
     }
