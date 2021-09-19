@@ -75,8 +75,14 @@ body {
     </div>
     <div class="text-container container-item">
       <div class="code">404</div>
+      <font color="black">
       <div class="msg">你查看的页面貌似丢失了呢...</div>
-      <div class="action">返回首页,查看更多内容.</div>
+      <script>
+      function sy() {
+      self.location=document.referrer
+      }
+      <div class="action"><a href="#" onlick="sy()">返回首页</a></div>
+      </font>
     </div>
   </div>
 </body>
