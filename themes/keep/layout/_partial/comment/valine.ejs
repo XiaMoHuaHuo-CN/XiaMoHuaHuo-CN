@@ -1,11 +1,9 @@
 <% if(
         theme.comment.use === 'valine'
-        && theme.comment.valine.appid
-        && theme.comment.valine.appkey
 ) { %>
     <div class="valine-container">
         <script <%= theme.pjax.enable === true ? 'data-pjax' : '' %>
-                src="//unpkg.com/valine/dist/Valine.min.js"</script>
+                src="https://unpkg.com/valine/dist/Valine.min.js"</script>
         <div id="vcomments"></div>
         <script <%= theme.pjax.enable === true ? 'data-pjax' : '' %>>
             function loadValine() {
@@ -13,12 +11,7 @@
                     el: '#vcomments',
                     appId: '<%= theme.comment.valine.appid %>',
                     appKey: '<%= theme.comment.valine.appkey %>',
-                    meta: ['nick', 'mail', 'link'],
-                    avatar: '<%= theme.comment.valine.avatar %>',
-                    enableQQ: true,
-                    placeholder: '<%= theme.comment.valine.placeholder %>',
-					visitor: '<%= theme.comment.valine.visitor %>',
-                    lang: '<%= config.language %>'.toLowerCase()
+                    avatar: '<%= theme.comment.valine.avatar %>'
                 });
 
                 function getAuthor(language) {
