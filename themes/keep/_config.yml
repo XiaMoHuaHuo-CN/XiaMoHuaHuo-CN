@@ -54,16 +54,16 @@ style:
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false
+  enable: true
   links:
-    github: https://github.com/XiaMoHuaHuo_CN          # your GitHub URL
-    weixin:          # your WeChat QR-Code URL
-    qq:              # your QQ QR-Code URL
-    weibo:           # your WeiBo URL
-    zhihu:           # your ZhiHu URL
-    twitter: https://twitter/HuaHuo_CN         # your twitter URL
-    facebook:        # your facebook URL
-    email: xiamohuahuo-cn@qq.com           # your email
+    github: https://github.com/XiaMoHuaHuo_CN
+    weixin:
+    qq:
+    weibo:
+    zhihu:
+    twitter: https://twitter/HuaHuo_CN
+    facebook:
+    email: xiamohuahuo-cn@qq.com
 
 
 # ---------------------------------------------------------------------------------------
@@ -74,9 +74,10 @@ menu:
   Archives: /archives
   # Categories: /categories
   Tags: /tags
-  第三方Tools: /tools
+  第三方工具: /tools
   网站镜像: /iso
   API: /api
+  本站工具: /xmtools
   #Links: /links
   #About: /about
   # Changelog: /changelog
