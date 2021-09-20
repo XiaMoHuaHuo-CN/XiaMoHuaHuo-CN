@@ -37,7 +37,7 @@
             var times =document.getElementById('times');
             if (jc == 0){
                 id = window.setInterval("time()",1000);
-                document.getElementById('start').innerHTML = "<h1>点我</h1>";
+                document.getElementById('start').innerHTML = "<h1>点击</h1>";
             }
             if (document.getElementById("time").innerHTML != "No time"){
                 jc = jc + 1;
@@ -72,10 +72,6 @@
             }
             if(time.innerHTML == 0){
                 document.getElementById('start').innerHTML = "<h1>0Sec</h1>";
-            }
-            if(time.innerHTML == "No time"){
-                document.getElementById('start').innerHTML = "<h1>10Sec</h1>";
-                time.innerHTML = 10 ;
             }
             if(time.innerHTML == 4){
                 document.getElementById('start').innerHTML = "<h1>4Sec</h1>"; 
