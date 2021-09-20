@@ -175,7 +175,7 @@ local_search:
 # ---------------------------------------------------------------------------------------
 comment:
   enable: true
-  use: valine  # values: valine | gitalk | twikoo
+  use: valine
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -185,19 +185,6 @@ comment:
     avatar: R-C.jpg
     placeholder: 随便说点什么叭～
     visitor: true
-  # Gitalk
-  # See: https://github.com/gitalk/gitalk
-  gitalk:
-    github_id:             # GitHub repo owner
-    repository:            # Repository name to store issues
-    client_id:             # GitHub Application Client ID
-    client_secret:         # GitHub Application Client Secret
-
-  # Twikoo
-  # See: https://github.com/imaegoo/twikoo
-  twikoo:
-    env_id:                # Tencent Cloud environment id
-    region:                # environment region. If select Guangzhou, fill in "ap-guangzhou".
 
 
 # ---------------------------------------------------------------------------------------
