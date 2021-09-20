@@ -8,4 +8,4 @@ tag: 教程
 <p>将Hexo的文件上传至GitHub，nodejs的文件不用上传，如果主题文件是用git clone的，要先删除主题文件夹的.git文件夹</p>
 <h1>在Vercel创建项目</h2>
 <p>在Vercel上新建一个项目，导入刚才上传的储存库，选择Hexo框架，然后部署就可以自动构建了</p>
-<br />demo:<iframe height="600" width="800" src="https://hexo-cloud-builds-demo.vercel.app/"></iframe>
+<br />demo:<iframe height="600" src="https://hexo-cloud-builds-demo.vercel.app/"></iframe>
