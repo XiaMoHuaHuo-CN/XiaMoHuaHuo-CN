@@ -13,7 +13,7 @@
  <td>服务器名称(可选)</td>
 </tr>
 </table>
-示例:<br />http://xma.info.xmweb.gq/api/mcsi?host=xxx&port=xxx
+示例:<br />http://xma.info.xmweb.gq/api/mcsi?host=xxx&port=xxx&sn=xxx
 <h1>Minecraft服务器检测</h1>
 调用地址:http://xma.info.xmweb.gq/api/mcsi<br />
 参数:<br />
