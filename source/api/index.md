@@ -15,7 +15,7 @@
 </table>
 示例:<br />http://xma.info.xmweb.gq/api/mcsi?host=xxx&port=xxx
 <h1>Minecraft服务器检测</h1>
-调用地址:http://xma.epizy.com/api/mcsi<br />
+调用地址:http://xma.info.xmweb.gq/api/mcsi<br />
 参数:<br />
 <table border="1">
 <tr>
