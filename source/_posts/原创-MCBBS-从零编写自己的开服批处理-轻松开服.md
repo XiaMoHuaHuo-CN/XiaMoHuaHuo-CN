@@ -98,9 +98,7 @@ goto 1{% endcodeblock %}<br />
 <h1>扩展教程</h1>
 <div class="sample-form">
 <form id="hcaptcha-demo-form" method="POST">
-<li role="presentation" id="Captha">请完成人机验证
 <div class="">
-
 <div id="hcaptcha-demo" class="h-captcha" data-sitekey="3d162544-450b-4223-b895-dfcf219a416d" data-callback="onSuccess" data-expired-callback="onExpire"></div>
 <script>
                       var onSuccess = function(response) {
@@ -120,9 +118,7 @@ goto 1{% endcodeblock %}<br />
                         logEl.innerHTML = '人机验证token已过期'
               };
 </script>
-
 </div>
-</li>
 </form>
 <div class="hcaptcha-success smsg" aria-live="polite"></div>
 </div>
