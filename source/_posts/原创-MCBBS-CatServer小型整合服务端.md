@@ -109,7 +109,4 @@ TAB[<font color="Lime">√</font>]<br />
 2021-01-24:<font color="DarkOrange">更新开服批处理</font><br />
 2021-01-28:<font color="DarkOrange">全面更新排版</font></b></p>
 <h1>下载地址</h1>
-<p><b>Download-Repo[失败请重试，建议多线程]：
-<a href="http://dl.huahuo-cn.tk/api?u=CatServer小型整合服务端.7z">http://dl.huahuo-cn.tk/api?u=CatServer小型整合服务端.7z</a><br />
-下载不了？直接使用直链:<br />
-<a href="http://repo.huahuo-cn.tk/CatServer小型整合服务端.7z">http://repo.huahuo-cn.tk/CatServer小型整合服务端.7z</a></b></p>
+<p><b><a href="http://repo.huahuo-cn.tk/CatServer小型整合服务端.7z">http://repo.huahuo-cn.tk/CatServer小型整合服务端.7z</a></b></p>
