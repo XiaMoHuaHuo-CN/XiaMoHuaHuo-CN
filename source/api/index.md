@@ -1,3 +1,19 @@
+<h1>Minecraft服务器检测(图像版)</h1>
+调用地址:http://xma.epizy.com/api/mcsiws<br />
+参数:<br />
+<table border="1">
+<tr>
+ <td>host</td>
+ <td>port</td>
+ <td>sn</td>
+</tr>
+<tr>
+ <td>服务器地址</td>
+ <td>端口</td>
+ <td>服务器名称(可选)</td>
+</tr>
+</table>
+示例:<br />http://xma.epizy.com/api/mcsi?host=xxx&port=xxx
 <h1>Minecraft服务器检测</h1>
 调用地址:http://xma.epizy.com/api/mcsi<br />
 参数:<br />
@@ -11,7 +27,7 @@
  <td>端口</td>
 </tr>
 </table>
-示例: http://xma.epizy.com/api/mcsi?host=xxx&port=xxx
+示例:<br />http://xma.epizy.com/api/mcsi?host=xxx&port=xxx
 <h1>每日Bing图</h1>
  <p>演示:<br />
   <img src="https://xma.huahuo-cn.tk/api/bingpaper/"/><br />
