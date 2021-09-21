@@ -11,6 +11,7 @@
  <td>端口</td>
 </tr>
 </table>
+示例: http://xma.epizy.com/api/mcsi?host=xxx&port=xxx
 <h1>每日Bing图</h1>
  <p>演示:<br />
   <img src="https://xma.huahuo-cn.tk/api/bingpaper/"/><br />
