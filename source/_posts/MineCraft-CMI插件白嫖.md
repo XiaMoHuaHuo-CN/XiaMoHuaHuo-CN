@@ -7,4 +7,4 @@ tags: MineCraft
 <p>本贴提供的资源来自第三方;<br/>
 请支持正版!在本贴下载的内容本人概不负责。</p>
 <h1>下载地址</h1>
-<p><a href="http://download.huahuo-cn.tk/CMI8.0.10.0.jar">http://download.huahuo-cn.tk/CMI8.0.10.0.jar</a></p>
+<p><a href="http://repo.huahuo-cn.tk/CMI8.0.10.0.jar">http://repo.huahuo-cn.tk/CMI8.0.10.0.jar</a></p>
